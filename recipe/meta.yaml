@@ -10,7 +10,7 @@ source:
   sha256: 16c8e35f35d2cd5ca11757dc188de5c8e90000f8d0c607c9d8ae417f1be6823a
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - hpccm=hpccm.cli:main
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
