@@ -1,19 +1,19 @@
 {% set name = "hpccm" %}
-{% set version = "20.2.0" %}
+{% set version = "20.3.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 16c8e35f35d2cd5ca11757dc188de5c8e90000f8d0c607c9d8ae417f1be6823a
+  sha256: 91ea6e8048f257bb8797eb3387665fa94e2778c8e2ae752716e5926bb8d65f57
 
 build:
   number: 0
   entry_points:
     - hpccm=hpccm.cli:main
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
   host:
