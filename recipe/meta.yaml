@@ -36,7 +36,7 @@ test:
 
 about:
   home: https://github.com/NVIDIA/hpc-container-maker
-  license: Apache Software
+  license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE
   summary: HPC Container Maker
