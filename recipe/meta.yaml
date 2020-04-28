@@ -14,16 +14,15 @@ build:
   entry_points:
     - hpccm=hpccm.cli:main
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
+  noarch: python
 
 requirements:
   host:
-    - enum34  # [py<34]
     - pip
-    - python
+    - python >=3.4
     - six
   run:
-    - enum34  # [py<34]
-    - python
+    - python >=3.4
     - six
 
 test:
