@@ -1,5 +1,5 @@
 {% set name = "hpccm" %}
-{% set version = "20.4.0" %}
+{% set version = "20.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 783644256d927a7a71a82ce2c46e957c8d7ac7a97e944e301b73f45ca59186cc
+  sha256: 93bba358d9c65b5d60d04747464b13d4c5b044ebcd6b6d71885f1cf965e0104d
 
 build:
   number: 0
