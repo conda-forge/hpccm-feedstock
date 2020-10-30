@@ -5,11 +5,13 @@ Home: https://github.com/NVIDIA/hpc-container-maker
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hpccm-feedstock/blob/master/LICENSE.txt)
 
 Summary: HPC Container Maker
 
+Development: https://github.com/NVIDIA/hpc-container-maker
 
+Documentation: https://github.com/NVIDIA/hpc-container-maker/tree/master/docs
 
 Current build status
 ====================
