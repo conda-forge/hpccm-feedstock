@@ -25,6 +25,7 @@ requirements:
     - archspec
     - python >=3.4
     - six
+    - packaging
 
 test:
   imports:
