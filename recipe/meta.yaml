@@ -21,6 +21,7 @@ requirements:
     - pip
     - python >=3.4
     - six
+    - setuptools
   run:
     - archspec
     - python >=3.4
