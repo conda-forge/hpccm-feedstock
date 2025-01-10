@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 0e7bf322541f1311c4e5f674568c4ad58c3e681aebe8bef2d160f9c62a4212c2
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - hpccm=hpccm.cli:main
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
@@ -19,16 +19,18 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.4
+    - python {{ python_min }}
     - six
     - setuptools
   run:
     - archspec
-    - python >=3.4
+    - python >={{ python_min }}
     - six
     - packaging
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - hpccm
     - hpccm.building_blocks
