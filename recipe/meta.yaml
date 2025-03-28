@@ -1,5 +1,5 @@
 {% set name = "hpccm" %}
-{% set version = "24.10.0" %}
+{% set version = "25.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0e7bf322541f1311c4e5f674568c4ad58c3e681aebe8bef2d160f9c62a4212c2
+  sha256: 0065643f7ed5ec01983919f4eb1e8ca3eeafab2fefa63cb2d68a036dc7558850
 
 build:
-  number: 1
+  number: 0
   entry_points:
     - hpccm=hpccm.cli:main
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
